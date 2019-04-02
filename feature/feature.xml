@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="dev.saseno.eclipse.mini.feature"
+      label="Mini Eclipse Feature"
+      version="0.0.1.qualifier"
+      provider-name="saseno.dev"
+      plugin="dev.saseno.eclipse.mini.plugin">
+
+   <description url="https://saseno.dev">
+      Custom eclipse feature with &quot;empty&quot; plugin
+   </description>
+
+   <copyright url="https://saseno.dev">
+      Minimal Eclipse 
+   </copyright>
+
+   <license url="https://saseno.dev">
+      License here...
+   </license>
+
+   <plugin
+         id="dev.saseno.eclipse.mini.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

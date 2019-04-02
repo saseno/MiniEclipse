@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Mini Eclipse Plugin
+Bundle-SymbolicName: dev.saseno.eclipse.mini.plugin;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: saseno.dev
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: dev.saseno.eclipse.plugin.Activator
+Require-Bundle: org.eclipse.osgi,
+ org.eclipse.platform
+Automatic-Module-Name: dev.saseno.eclipse.mini.plugin

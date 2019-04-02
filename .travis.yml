@@ -1,3 +1,10 @@
 language: java
 script:
 - mvn clean verify
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: a347790b7746972e53bc91fa4b243b3be00293df
+  keep_history: true
+  on:
+    branch: master

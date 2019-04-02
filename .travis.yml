@@ -7,5 +7,6 @@ deploy:
   api_key: $GITHUB_TOKEN
   keep_history: true
   local_dir: miniEclipse
+  verbose: true
   on:
     branch: master

@@ -3,12 +3,14 @@ install: mvn -version
 script:
 - mvn clean verify
 - rm -Rf product/target/products/dev.saseno.eclipse.mini
+- mkdir out
+- cp -v product/target/products/dev.saseno.eclipse.mini/*.zip out
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_ACCTOKEN
   keep_history: true
-  local_dir: product/target/products
+  local_dir: out
   verbose: true
   on:
     branch: master

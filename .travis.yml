@@ -2,9 +2,9 @@ language: java
 install: mvn -version
 script:
 - mvn clean verify
-- rm -Rf product/target/products/dev.saseno.eclipse.mini
-- mkdir out
-- cp -v product/target/products/*.zip out
+# - rm -Rf product/target/products/dev.saseno.eclipse.mini
+- mkdir out/MiniEclipse
+- cp -v product/target/products/*.zip out/MiniEclipse
 deploy:
   provider: pages
   skip_cleanup: true

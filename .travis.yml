@@ -3,7 +3,7 @@ install: mvn clean verify
 deploy:
   provider: releases
   skip_cleanup: true
-  api_key: $GITHUB_TOKEN
+  github_token: $GITHUB_ACCTOKEN
   keep_history: true
   local_dir: miniEclipse
   verbose: true

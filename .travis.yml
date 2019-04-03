@@ -1,5 +1,5 @@
 language: java
-install: clean verify
+install: mvn clean verify
 deploy:
   provider: releases
   skip_cleanup: true

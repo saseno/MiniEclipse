@@ -22,7 +22,7 @@
       <linux icon="/icons/icon.xpm"/>
       <macosx icon="/icons/Goodstuff-No-Nonsense-Free-Space-Space-rocket.icns"/>
       <win useIco="true">
-         <ico path="product\icons\MiniEclipse.ico"/>
+         <ico path="product/icons/MiniEclipse.ico"/>
          <bmp/>
       </win>
    </launcher>

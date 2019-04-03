@@ -3,6 +3,8 @@ install: mvn -version
 script:
 - mvn clean verify
 # - rm -Rf product/target/products/dev.saseno.eclipse.mini
+- rm -Rf MiniEclipse/*
+- mkdir out
 - mkdir out/MiniEclipse
 - cp -v product/target/products/*.zip out/MiniEclipse
 deploy:

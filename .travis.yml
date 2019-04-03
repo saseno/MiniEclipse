@@ -2,12 +2,15 @@ language: java
 install: mvn -version
 script:
 - mvn clean verify
+- rm -vRf product/target/products/dev.saseno.eclipse.mini
 deploy:
-  provider: pages
+  provider: releases
+  api_key: $GITHUB_OAUTH_TOKEN
+  file: product/target/products/*
   skip_cleanup: true
-  github_token: $GITHUB_ACCTOKEN
-  keep_history: true
-  local_dir: product/target/products
+  # keep_history: true
+  # github_token: $GITHUB_ACCTOKEN
+  # local_dir: product/target/products
   verbose: true
   on:
     branch: master

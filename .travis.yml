@@ -4,13 +4,11 @@ script:
 - mvn clean verify
 - rm -vRf product/target/products/dev.saseno.eclipse.mini
 deploy:
-  provider: releases
-  api_key: $GITHUB_OAUTH_TOKEN
-  file: product/target/products/*
+  provider: pages
   skip_cleanup: true
-  # keep_history: true
-  # github_token: $GITHUB_ACCTOKEN
-  # local_dir: product/target/products
+  github_token: $GITHUB_ACCTOKEN
+  keep_history: true
+  local_dir: product/target/products
   verbose: true
   on:
     branch: master

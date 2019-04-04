@@ -16,4 +16,4 @@ deploy:
   verbose: true
   on:
     branch: master
-    repo: saseno/saseno.github.io
+    # repo: saseno/saseno.github.io

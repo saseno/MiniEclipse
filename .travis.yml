@@ -7,6 +7,7 @@ script:
 - mkdir out
 - mkdir out/MiniEclipse
 - cp README.md out/
+- cp _config.yml out/
 - cp -v product/target/products/*.zip out/MiniEclipse
 deploy:
   provider: pages

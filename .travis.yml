@@ -6,6 +6,7 @@ script:
 - rm -Rf MiniEclipse/*
 - mkdir out
 - mkdir out/MiniEclipse
+- cp README.md out/
 - cp -v product/target/products/*.zip out/MiniEclipse
 deploy:
   provider: pages

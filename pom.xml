@@ -23,7 +23,6 @@
 		<tycho-extras-version>${tycho-version}</tycho-extras-version>
 		<product-id>Minimalist Eclipse</product-id>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    		<org.eclipse.justj.eclipse.repository>http://download.eclipse.org/releases/2020-09</org.eclipse.justj.eclipse.repository>
 	</properties>
 
 	<repositories>
@@ -40,12 +39,6 @@
 			<layout>p2</layout>
 			<url>https://download.eclipse.org/releases/2020-09</url>
 		</repository>
-		
-		<repository>
-      			<id>eclipse-repository</id>
-      			<url>${org.eclipse.justj.eclipse.repository}</url>
-      			<layout>p2</layout>
-    		</repository>
 		
 	</repositories>
 

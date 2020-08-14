@@ -17,8 +17,8 @@ jobs:
     - name: upload artifact linux
       uses: actions/upload-artifact@v1
       with:
-        name: MiniEclipse.gtk.x86.zip
-        path: /home/runner/work/MiniEclipse/MiniEclipse/product/target/products/dev.saseno.eclipse.mini-linux.gtk.x86.zip
+        name: MiniEclipse.gtk.x86_64.zip
+        path: /home/runner/work/MiniEclipse/MiniEclipse/product/target/products/dev.saseno.eclipse.mini-linux.gtk.x86_64.zip
     - name: upload artifact win
       uses: actions/upload-artifact@v1
       with:

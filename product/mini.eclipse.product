@@ -36,8 +36,10 @@
    <features>
       <feature id="org.eclipse.platform" installMode="root"/>
       <feature id="dev.saseno.eclipse.mini.feature" installMode="root"/>
-       
+      <!--
       <feature id="org.eclipse.justj.openjdk.hotspot.jre.full" installMode="root"/>
+      -->
+       
       <feature id="org.eclipse.oomph.setup" installMode="root"/>
        
    </features>

@@ -3,8 +3,7 @@
 
 <product name="Mini Eclipse" uid="dev.saseno.eclipse.mini" id="dev.saseno.eclipse.mini.plugin.application" application="org.eclipse.ui.ide.workbench" version="0.0.1.qualifier" useFeatures="true" includeLaunchers="true">
 
-
-   <configIni use="default">
+    <configIni use="default">
    </configIni>
 
    <launcherArgs>
@@ -27,11 +26,9 @@
       </win>
    </launcher>
 
-
    <vm>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
    </vm>
-
 
    <plugins>
    </plugins>
@@ -42,10 +39,10 @@
    </features>
 
    <configurations>
-      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
-      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
-      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="3" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <property name="osgi.instance.area.default" value="miniWorkspace" />
    </configurations>

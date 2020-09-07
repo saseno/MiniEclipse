@@ -1,6 +1,6 @@
 ## MiniEclipse
 
-Eclipse RCP with minimum plugins/features. 
+Eclipse RCP with minimum plugins/features. Based on Eclipse 4.16 (2020-09).
 
 This project was built using [Travis-CI](https://travis-ci.org/saseno/MiniEclipse).
 

@@ -11,4 +11,3 @@ This project was built using [Travis-CI](https://travis-ci.org/saseno/MiniEclips
 - [Mac](https://github.com/saseno/MiniEclipse/blob/gh-pages/MiniEclipse/dev.saseno.eclipse.mini-macosx.cocoa.x86_64.zip)
 
 [![Java CI](https://github.com/saseno/MiniEclipse/workflows/Java%20CI/badge.svg)](https://github.com/saseno/MiniEclipse/actions)
-

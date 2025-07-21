@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Mini Eclipse" uid="dev.saseno.eclipse.mini" id="dev.saseno.eclipse.mini.plugin.application" application="org.eclipse.ui.ide.workbench" version="0.0.1.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="Mini Eclipse" uid="dev.saseno.eclipse.mini" id="dev.saseno.eclipse.mini.plugin.application" application="org.eclipse.ui.ide.workbench" version="0.0.1.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
 
-    <configIni use="default">
+   <configIni use="default">
    </configIni>
 
    <launcherArgs>
@@ -17,7 +17,7 @@
 
    <splash
       location="dev.saseno.eclipse.mini.plugin" />
-   <launcher name="mini.eclipse">
+   <launcher name="MiniEclipse.eclipse">
       <linux icon="/icons/icon.xpm"/>
       <macosx icon="/icons/Goodstuff-No-Nonsense-Free-Space-Space-rocket.icns"/>
       <win useIco="true">
@@ -34,31 +34,26 @@
    </plugins>
 
    <features>
+      <feature id="dev.saseno.eclipse.mini.feature" version="0.0.1.qualifier" installMode="root"/>
+      <feature id="org.eclipse.e4.rcp" installMode="root"/>
       <feature id="org.eclipse.platform" installMode="root"/>
-      <feature id="dev.saseno.eclipse.mini.feature" installMode="root"/>
-      <!--
-      <feature id="org.eclipse.sdk"/>
-      <feature id="org.eclipse.justj.openjdk.hotspot.jre.full" installMode="root"/>
-      -->
-       
       <feature id="org.eclipse.oomph.setup" installMode="root"/>
-       
    </features>
 
-   <configurations>       
+   <configurations>
       <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="4" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
-       
       <property name="osgi.instance.area.default" value="miniWorkspace" />
    </configurations>
 
    <repositories>
-      <repository location="http://download.eclipse.org/eclipse/updates/4.36" enabled="true" />
-      <repository location="https://download.eclipse.org/releases/2025-09" enabled="true" />
+      <repository location="https://download.eclipse.org/releases/2025-09" name="eclipse.release" enabled="true" />
+      <repository location="http://download.eclipse.org/eclipse/updates/4.36" name="eclipse.update" enabled="true" />
+      <repository location="https://download.eclipse.org/eclipse/updates/4.36" name="eclipse.update" enabled="true" />
    </repositories>
 
    <preferencesInfo>

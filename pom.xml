@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -26,20 +27,21 @@
 	</properties>
 
 	<repositories>
-	
-		<!-- use directly eclipse source, to keep this eclipse product up to date -->
+
+		<!-- use directly eclipse source, to keep this eclipse product up to
+		date -->
 		<repository>
 			<id>Eclipse Platform</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/eclipse/updates/4.16</url>	
+			<url>http://download.eclipse.org/eclipse/updates/4.16</url>
 		</repository>
-		
+
 		<repository>
 			<id>Eclipse Release</id>
 			<layout>p2</layout>
 			<url>https://download.eclipse.org/releases/2020-09</url>
 		</repository>
-		
+
 	</repositories>
 
 	<modules>
@@ -73,7 +75,7 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
-				<configuration>				
+				<configuration>
 					<resolver>p2</resolver>
 					<pomDependencies>consider</pomDependencies>
 					<environments>
@@ -90,8 +92,8 @@
 							<ws>gtk</ws>
 							<arch>x86_64</arch>
 						</environment>
-                        
-                        <!--
+
+						<!--
 						<environment>
 							<os>win32</os>
 							<ws>win32</ws>
@@ -104,13 +106,13 @@
 							<ws>win32</ws>
 							<arch>x86_64</arch>
 						</environment>
-                                                
+
 						<environment>
 							<os>macosx</os>
 							<ws>cocoa</ws>
 							<arch>x86_64</arch>
 						</environment>
-                        
+
 					</environments>
 				</configuration>
 			</plugin>
@@ -118,12 +120,12 @@
 		</plugins>
 	</build>
 
-	<dependencies>	
+	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.tycho.extras</groupId>
 			<artifactId>tycho-pomless</artifactId>
 			<version>${tycho-extras-version}</version>
-        </dependency>
+		</dependency>
 	</dependencies>
-	
+
 </project>

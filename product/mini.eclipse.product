@@ -57,8 +57,8 @@
    </configurations>
 
    <repositories>
-      <repository location="http://download.eclipse.org/eclipse/updates/4.16" enabled="true" />
-      <repository location="https://download.eclipse.org/releases/2020-09" enabled="true" />
+      <repository location="http://download.eclipse.org/eclipse/updates/4.36" enabled="true" />
+      <repository location="https://download.eclipse.org/releases/2025-09" enabled="true" />
    </repositories>
 
    <preferencesInfo>

@@ -12,7 +12,7 @@
 	</parent>
 
 	<artifactId>dev.saseno.eclipse.mini.repo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<!--<version>0.0.1-SNAPSHOT</version>-->
 	<name>Mini Eclipse P2 Repo</name>
 	<packaging>eclipse-repository</packaging>
 

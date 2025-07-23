@@ -12,7 +12,7 @@
 	</parent>
 
 	<artifactId>dev.saseno.eclipse.mini.feature</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<!--<version>0.0.1-SNAPSHOT</version>-->
 	<name>Mini Eclipse Feature</name>
 	<packaging>eclipse-feature</packaging>
 

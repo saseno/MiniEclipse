@@ -13,10 +13,14 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.awt.SWT_AWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.part.ViewPart;
+import org.openimaj.video.capture.VideoCapture;
+
+import com.github.eduramiba.webcamcapture.drivers.NativeDriver;
+import com.github.sarxos.webcam.Webcam;
 
 public class WebcamView extends ViewPart {
 	public static final String ID = "dev.saseno.eclipse.digi.oh.camera.WebcamView.id";
-//	private VideoCapture vc;
+	private VideoCapture vc;
 	private JLabel previewLabel;
 //	private MBFImage lastFrame;
 	private volatile boolean running = true;
@@ -61,7 +65,14 @@ public class WebcamView extends ViewPart {
 
 		// Start webcam preview thread
 		try {
-//			vc = new VideoCapture(640, 480);
+			
+
+			Webcam.setDriver(new NativeDriver());
+			Webcam webcam = Webcam.getDefault();
+
+			webcam.open();
+			
+			vc = new VideoCapture(640, 480);
 //			Thread previewThread = new Thread(() -> {
 //				while (running) {
 //					lastFrame = vc.getNextFrame();

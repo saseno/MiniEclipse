@@ -15,7 +15,7 @@ Bundle-ClassPath: .,
  libs/core-video-capture-1.3.10.jar,
  libs/core-video-1.3.10.jar,
  libs/image-processing-1.3.10.jar,
- libs/webcam-capture-driver-native-1.2.0.jar
+ libs/webcam-capture-driver-openimaj-0.3.12.jar
 Require-Bundle: org.eclipse.osgi,
  org.eclipse.platform,
  org.eclipse.ui,

@@ -15,8 +15,8 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.part.ViewPart;
 import org.openimaj.video.capture.VideoCapture;
 
-import com.github.eduramiba.webcamcapture.drivers.NativeDriver;
 import com.github.sarxos.webcam.Webcam;
+import com.github.sarxos.webcam.ds.openimaj.OpenImajDriver;
 
 public class WebcamView extends ViewPart {
 	public static final String ID = "dev.saseno.eclipse.digi.oh.camera.WebcamView.id";
@@ -67,7 +67,7 @@ public class WebcamView extends ViewPart {
 		try {
 			
 
-			Webcam.setDriver(new NativeDriver());
+			Webcam.setDriver(new OpenImajDriver());
 			Webcam webcam = Webcam.getDefault();
 
 			webcam.open();

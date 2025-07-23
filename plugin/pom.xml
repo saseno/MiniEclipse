@@ -31,9 +31,14 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencies>
 		<!--
+		<dependency>
+			<groupId>com.github.sarxos</groupId>
+			<artifactId>webcam-capture-driver-openimaj</artifactId>
+			<version>0.3.12</version>
+		</dependency>
 		<dependency>
 			<groupId>org.openimaj</groupId>
 			<artifactId>core-video-capture</artifactId>
